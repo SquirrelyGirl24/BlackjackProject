@@ -7,6 +7,8 @@ In this project I created a command-line Blackjack card game.
 * Java
 * Enums
 * OO Design
+* Google
+* Github
 
 ### Lessons Learned
 //TODO 

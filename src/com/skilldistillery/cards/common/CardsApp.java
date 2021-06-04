@@ -16,10 +16,8 @@ public class CardsApp {
 	}
 
 	private void launch(Scanner input) {
-//		Write a program to ask a user how many cards they want.
 		int howManyCards;
 		try {
-//		Handle the case where users enter a non-integer or a number greater than 52: print an error message.
 			System.out.print("How many cards would you like? ");
 			howManyCards = input.nextInt();
 			if (howManyCards > 52) {
@@ -33,7 +31,6 @@ public class CardsApp {
 			return;
 		}
 		deck.shuffle();
-//		Deal the cards and display them on the screen. Also display the total value of all cards.
 		Hand hand = new Hand();
 		for (int i = 0; i < howManyCards; i++) {
 //			Card card = deck.dealCard();
