@@ -3,24 +3,27 @@ package com.skilldistillery.cards.blackjack;
 import com.skilldistillery.cards.common.Card;
 import com.skilldistillery.cards.common.Hand;
 
-public class Player {
-	private Hand hand = new hand();
-
+public class Player extends Hand {
+//	private Hand hand = new hand();
+	private Player player;
+	
 	public boolean isBlackjack() {
-		if (hand.getHandValue() == 21) {
+		if (player.getHandValue() == 21) {
+			System.out.println("Player has Blackjack!");
 			return true;
 		} else {
 			return false;
 		}
 	}
-	public void addCard(Card card) {
-		hand.addCard(card);
+	public void dealCard(Card card) {
+		player.dealCard(card);
 	}
 	public String getHandString() {
-		String str = "Cards: " + hand.toString();
+		String str = "Cards: " + player.toString();
+		return str;
 		}
 	public void clearHand() {
-		hand.fold();
+		player.fold();
 	}
 }
  

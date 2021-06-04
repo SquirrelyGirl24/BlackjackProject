@@ -1,11 +1,9 @@
 package com.skilldistillery.cards.common;
 
-import java.util.ArrayList;
 import java.util.InputMismatchException;
-import java.util.List;
 import java.util.Scanner;
 
-public class CardsApp {
+public class CardsApp extends Hand{
 	Deck deck = new Deck();
 
 	public static void main(String[] args) {
@@ -24,7 +22,7 @@ public class CardsApp {
 				throw new RuntimeException("Too many cards requested");
 			}
 		} catch (InputMismatchException e) {
-			System.err.println("Invalid input.  Start over");
+			System.err.println("Invalid input. Start over");
 			return;
 		} catch (RuntimeException re) {
 			System.err.println(re);
