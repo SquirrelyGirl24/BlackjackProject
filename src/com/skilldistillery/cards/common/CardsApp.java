@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class CardsApp extends Hand{
 	Deck deck = new Deck();
-
+	private Hand hand; 
+	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		CardsApp app = new CardsApp();
@@ -29,7 +30,6 @@ public class CardsApp extends Hand{
 			return;
 		}
 		deck.shuffle();
-		Hand hand = new Hand();
 		for (int i = 0; i < howManyCards; i++) {
 //			Card card = deck.dealCard();
 //			System.out.println(card);

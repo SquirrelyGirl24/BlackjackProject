@@ -8,5 +8,13 @@ public class BlackjackHand extends Hand{
 	public int getHandValue() {
 		return super.getHandValue();
 	}
+	public boolean isBlackjack() {
+		if (getHandValue() == 21) {
+			System.out.println("Blackjack!");
+			return true;
+		} else {
+			return false;
+		}
+	}
 	
 }
