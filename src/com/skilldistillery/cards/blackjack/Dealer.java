@@ -6,6 +6,9 @@ import com.skilldistillery.cards.common.Deck;
 public class Dealer extends BlackjackPlayer {
 	private Deck deck;
 
+public Dealer() {
+	setHand(new BlackjackHand());
+}
 	// deal cards from deck
 	public Card dealCard() {
 		return deck.dealCard();
@@ -30,8 +33,7 @@ public class Dealer extends BlackjackPlayer {
 		getHand().addCard(card);
 	}
 	public boolean peek() {
-		// TODO Auto-generated method stub
-		return peek();
+		return getHand().dealerPeek();
 	}
 
 }
