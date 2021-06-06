@@ -22,12 +22,6 @@ public abstract class Hand {
 		cards.clear();
 	}
 
-	public boolean dealerPeek() {
-		Object[] theHand = null;
-		int value = ((Hand) theHand[1]).getHandValue();
-		return value == 1 || value >= 10;
-	}
-
 	public void displayHand() {
 		if (cards.size() == 0) {
 			System.out.println("No cards.");

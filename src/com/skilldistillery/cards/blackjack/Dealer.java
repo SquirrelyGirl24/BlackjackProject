@@ -4,7 +4,7 @@ import com.skilldistillery.cards.common.Card;
 import com.skilldistillery.cards.common.Deck;
 
 public class Dealer extends BlackjackPlayer {
-	private Deck deck;
+	private Deck deck = new Deck();
 
 public Dealer() {
 	setHand(new BlackjackHand());
@@ -19,7 +19,7 @@ public Dealer() {
 	// display dealer hand
 	public void dealerHandValue() {
 		int dealerHandValue = getHand().getHandValue();
-		while (dealerHandValue <= 17) {
+		while (dealerHandValue <= 20) {
 			if (dealerHandValue > 21) {
 				System.out.println("Dealer busts.");
 			} 
@@ -31,9 +31,6 @@ public Dealer() {
 	// Hit or Stand?
 	public void hitHand(Card card) {
 		getHand().addCard(card);
-	}
-	public boolean peek() {
-		return getHand().dealerPeek();
 	}
 
 }

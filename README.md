@@ -21,3 +21,5 @@ In this project I created a command-line, single deck Blackjack card game. It ut
 ### Lessons Learned
 Figuring out how all the classes talk to each other and learning how to separate packages/classes accordingly to the projects.
 
+I need to get better at calling methods and classes to make code shorter and easier.
+
