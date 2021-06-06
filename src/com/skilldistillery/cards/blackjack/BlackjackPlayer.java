@@ -20,6 +20,7 @@ public class BlackjackPlayer extends Player {
 			}
 		}
 	}
+
 	// Get, hit or stand
 	public void hitHand(Card card) {
 		getHand().addCard(card);

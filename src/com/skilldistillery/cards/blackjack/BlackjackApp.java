@@ -49,6 +49,6 @@ public class BlackjackApp {
 			}
 			// Dealer's turn
 		} while (true);
-		
+
 	}
 }

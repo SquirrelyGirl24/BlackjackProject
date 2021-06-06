@@ -12,14 +12,13 @@ public abstract class Player {
 	public void setHand(Hand hand) {
 		this.hand = hand;
 	}
-	
+
 	public void showHand() {
 		hand.displayHand();
 	}
-	
+
 	public void checkBlackjack() {
 		((BlackjackHand) hand).isBlackjack();
 	}
-	
+
 }
- 

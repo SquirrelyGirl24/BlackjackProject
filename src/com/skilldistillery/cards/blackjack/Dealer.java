@@ -6,28 +6,31 @@ import com.skilldistillery.cards.common.Deck;
 public class Dealer extends BlackjackPlayer {
 	private Deck deck = new Deck();
 
-public Dealer() {
-	setHand(new BlackjackHand());
-}
+	public Dealer() {
+		setHand(new BlackjackHand());
+	}
+
 	// deal cards from deck
 	public Card dealCard() {
 		return deck.dealCard();
 	}
-	public void shuffle () {
+
+	public void shuffle() {
 		deck.shuffle();
 	}
+
 	// display dealer hand
 	public void dealerHandValue() {
 		int dealerHandValue = getHand().getHandValue();
 		while (dealerHandValue <= 20) {
 			if (dealerHandValue > 21) {
 				System.out.println("Dealer busts.");
-			} 
-			else {
+			} else {
 				System.out.println("Dealer has: " + dealerHandValue);
 			}
 		}
 	}
+
 	// Hit or Stand?
 	public void hitHand(Card card) {
 		getHand().addCard(card);

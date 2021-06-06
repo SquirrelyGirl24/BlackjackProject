@@ -3,10 +3,10 @@ package com.skilldistillery.cards.common;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class CardsApp extends Hand{
+public class CardsApp extends Hand {
 	Deck deck = new Deck();
-	private Hand hand; 
-	
+	private Hand hand;
+
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		CardsApp app = new CardsApp();
